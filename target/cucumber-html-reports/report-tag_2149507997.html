@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>05 Aug 2021, 16:05</td>
+      <td>10 Aug 2021, 13:56</td>
     </tr>
   </tbody>
 </table>
@@ -130,18 +130,18 @@ $(document).ready(function() {
         <tr>
           <td class="tagname">@wip</td>
           <td      class="passed"    >3</td>
-          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">4</td>
+          <td >0</td>
+          <td class="total">3</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="17601000000">17.601</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="21944000000">21.944</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -173,24 +173,25 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_4135879342.html">Contacts page</a>
+      <a href="report-feature_1321075111.html">Account Types</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2149507997.html">@wip</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">17.601</span>
+  <span class="lead-duration duration">21.944</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify Create Calendar Event</span>
+  <span class="name">Store manager user</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -199,7 +200,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -221,7 +222,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.vytrack.step_definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
@@ -238,9 +239,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -250,42 +251,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">the user is on the login page</span>
+  <span class="name">the user logged in as <span class="argument">&quot;store manager&quot;</span></span>
 
-  <span class="lead-duration duration">6.499</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the user enters the sales manager information</span>
-
-  <span class="lead-duration duration">4.501</span>
+  <span class="lead-duration duration">15.342</span>
 
 </div>
 
@@ -310,9 +284,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">the user navigates to <span class="argument">&quot;Activities&quot;</span> <span class="argument">&quot;Calendar Events&quot;</span></span>
+  <span class="name">the user navigates to <span class="argument">&quot;Customers&quot;</span> <span class="argument">&quot;Contacts&quot;</span></span>
 
-  <span class="lead-duration duration">4.515</span>
+  <span class="lead-duration duration">4.591</span>
 
 </div>
 
@@ -335,11 +309,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the title contains <span class="argument">&quot;Calendars&quot;</span></span>
+  <span class="name">the title contains <span class="argument">&quot;Contacts - Customers&quot;</span></span>
 
-  <span class="lead-duration duration">2.086</span>
+  <span class="lead-duration duration">2.011</span>
 
 </div>
 
@@ -347,23 +321,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at com.vytrack.step_definitions.LoginStepDefs.the_title_contains(LoginStepDefs.java:63)
-	at &#10045;.the title contains &quot;Calendars&quot;(file:///C:/Users/Eren/IdeaProjects/EU3CucumberSelenium/src/test/resources/features/Contacts.feature:13)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -383,7 +340,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -395,13 +352,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.483</span>
+  <span class="lead-duration duration">1.334</span>
 
           </div>
 
@@ -410,21 +367,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>screenshot</a>
-      <a href="embeddings/embedding_2007621883.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_2007621883.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
