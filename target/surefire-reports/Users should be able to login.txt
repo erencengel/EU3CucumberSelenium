@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Users should be able to login
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 44.568 s <<< FAILURE! - in Users should be able to login
+Login as a driver(Users should be able to login)  Time elapsed: 44.568 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Dashboard]> but was:<[Loading...]>
+
