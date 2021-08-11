@@ -1,5 +1,5 @@
 Feature: Contacts page
-
+  @wip
   Scenario: Default page number
     Given the user is on the login page
     And the user enters the driver information
@@ -22,8 +22,8 @@ Feature: Contacts page
         |Marketing|
         |Reports & Segments|
         |System|
-  @wip
-  Scenario Outline: login as a given user
+
+  Scenario Outline: login as a given user <user>
         Given the user is on the login page
         When the user logs in using following credentials
           |username |<user>      |

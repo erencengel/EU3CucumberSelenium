@@ -1,89 +1,13 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Contacts.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountTypes.feature");
 formatter.feature({
-  "name": "Contacts page",
+  "name": "Account Types",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "name": "login as a given user",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "name": "the user is on the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "the user logs in using following credentials",
-  "keyword": "When ",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "\u003cuser\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "password",
-        "UserUser123"
-      ]
-    },
-    {
-      "cells": [
-        "firstname",
-        "\u003cfirstName\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "lastname",
-        "\u003clastName\u003e"
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "the user should be able to login",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "user",
-        "firstName",
-        "lastName"
-      ]
-    },
-    {
-      "cells": [
-        "user10",
-        "Brenden",
-        "Schenider"
-      ]
-    },
-    {
-      "cells": [
-        "storemanager85",
-        "Stephan",
-        "Haley"
-      ]
-    }
-  ]
-});
 formatter.scenario({
-  "name": "login as a given user",
+  "name": "Driver user",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
       "name": "@wip"
@@ -94,50 +18,50 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user is on the login page",
+  "name": "the user logged in as \"driver\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+  "location": "com.vytrack.step_definitions.ContactsStepDefs.the_user_logged_in_as(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using following credentials",
-  "rows": [
-    {},
-    {},
-    {},
-    {}
-  ],
+  "name": "the user navigates to \"Activities\" \"Calendar Events\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.ContactsStepDefs.the_user_logs_in_using_following_credentials(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+  "location": "com.vytrack.step_definitions.navigationMenuStepDefs.the_user_navigates_to(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003cBrenden Sch[en]ider\u003e but was:\u003cBrenden Sch[ne]ider\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrack.step_definitions.ContactsStepDefs.the_user_logs_in_using_following_credentials(ContactsStepDefs.java:61)\r\n\tat ✽.the user logs in using following credentials(file:///C:/Users/Eren/IdeaProjects/EU3CucumberSelenium/src/test/resources/features/Contacts.feature:28)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user should be able to login",
+  "name": "the title contains \"Calendar Events - ActivitieS\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_title_contains(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_title_contains(LoginStepDefs.java:63)\r\n\tat ✽.the title contains \"Calendar Events - ActivitieS\"(file:///C:/Users/Eren/IdeaProjects/EU3CucumberSelenium/src/test/resources/features/AccountTypes.feature:6)\r\n",
+  "status": "failed"
 });
 formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "login as a given user",
+formatter.uri("file:src/test/resources/features/Contacts.feature");
+formatter.feature({
+  "name": "Contacts page",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Default page number",
+  "description": "",
+  "keyword": "Scenario",
   "tags": [
     {
       "name": "@wip"
@@ -158,33 +82,35 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using following credentials",
-  "rows": [
-    {},
-    {},
-    {},
-    {}
-  ],
+  "name": "the user enters the driver information",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_driver_information()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user navigates to \"Customers\" \"Contacts\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.ContactsStepDefs.the_user_logs_in_using_following_credentials(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+  "location": "com.vytrack.step_definitions.navigationMenuStepDefs.the_user_navigates_to(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003cStephan []Haley\u003e but was:\u003cStephan [Tremaine ]Haley\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrack.step_definitions.ContactsStepDefs.the_user_logs_in_using_following_credentials(ContactsStepDefs.java:61)\r\n\tat ✽.the user logs in using following credentials(file:///C:/Users/Eren/IdeaProjects/EU3CucumberSelenium/src/test/resources/features/Contacts.feature:28)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user should be able to login",
+  "name": "default page number should be 1",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+  "location": "com.vytrack.step_definitions.navigationMenuStepDefs.default_page_number_should_be(java.lang.Integer)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png", "screenshot");
 formatter.after({
   "status": "passed"
 });
