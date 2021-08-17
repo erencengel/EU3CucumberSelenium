@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: Users should be able to login
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 44.42 s <<< FAILURE! - in Users should be able to login
-Login as a driver(Users should be able to login)  Time elapsed: 44.419 s  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 44.283 s <<< FAILURE! - in Users should be able to login
+Login as a driver(Users should be able to login)  Time elapsed: 44.282 s  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: 
 Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-G90N9B6', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: driver.version: Driver
-Caused by: java.net.ConnectException: Failed to connect to /3.238.26.132:4444
+Caused by: java.net.ConnectException: Failed to connect to /3.236.102.181:4444
 Caused by: java.net.ConnectException: Connection timed out: connect
 
 Login as a driver(Users should be able to login)  Time elapsed: 0 s  <<< ERROR!
@@ -17,6 +17,6 @@ Could not start a new session. Possible causes are invalid address of the remote
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-G90N9B6', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: driver.version: Driver
-Caused by: java.net.ConnectException: Failed to connect to /3.238.26.132:4444
+Caused by: java.net.ConnectException: Failed to connect to /3.236.102.181:4444
 Caused by: java.net.ConnectException: Connection timed out: connect
 
