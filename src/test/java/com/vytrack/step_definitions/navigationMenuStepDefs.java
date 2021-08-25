@@ -42,7 +42,9 @@ public class navigationMenuStepDefs {
 
     @When("the user navigates to {string} {string}")
     public void the_user_navigates_to(String tab, String module) {
+        BrowserUtils.waitForVisibility(new DashBoardPage().pageSubTitle,10);
         new DashBoardPage().navigateToModule(tab, module);
+        BrowserUtils.waitForClickablility(new ContactsPage().pageNumber,5);
     }
 
     @Then("default page number should be {int}")

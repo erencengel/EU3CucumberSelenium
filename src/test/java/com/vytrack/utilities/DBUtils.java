@@ -183,4 +183,6 @@ public class DBUtils {
         return rowCount;
     }
 
+    public static void getRowMap() {
+    }
 }
