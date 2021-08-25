@@ -2,6 +2,7 @@ package com.vytrack.runners;
 
 import com.github.javafaker.Faker;
 
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
