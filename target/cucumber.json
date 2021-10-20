@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1866000000,
+              "duration": 4294000000,
               "status": "passed"
             },
             "line": 4,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-20T19:33:11.210Z",
+        "start_timestamp": "2021-10-20T19:43:20.691Z",
         "before": [
           {
             "result": {
-              "duration": 4805000000,
+              "duration": 4439000000,
               "status": "passed"
             },
             "match": {
@@ -50,7 +50,7 @@
               }
             ],
             "result": {
-              "duration": 763000000,
+              "duration": 791000000,
               "status": "passed"
             },
             "match": {
@@ -63,7 +63,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7729000000,
+              "duration": 1558000000,
               "status": "passed"
             },
             "line": 8,
@@ -76,7 +76,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003cDashboar[]\u003e but was:\u003cDashboar[d]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login(LoginStepDefs.java:35)\r\n\tat ✽.the user should be able to login(file:///C:/Users/Eren/IdeaProjects/EU3CucumberSelenium/src/test/resources/features/login.feature:9)\r\n",
-              "duration": 3029000000,
+              "duration": 3032000000,
               "status": "failed"
             },
             "line": 9,
