@@ -1,72 +1,18 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountTypes.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
 formatter.feature({
-  "name": "Account Types",
+  "name": "Users should be able to login",
   "description": "",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "name": "Driver user",
-  "description": "",
-  "keyword": "Scenario",
+  "keyword": "Feature",
   "tags": [
     {
-      "name": "@wip"
+      "name": "@login"
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user logged in as \"driver\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.ContactsStepDefs.the_user_logged_in_as(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user navigates to \"Activities\" \"Calendar Events\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.navigationMenuStepDefs.the_user_navigates_to(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the title contains \"Calendar Events - ActivitieS\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.LoginStepDefs.the_title_contains(java.lang.String)"
-});
-formatter.result({
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_title_contains(LoginStepDefs.java:63)\r\n\tat ✽.the title contains \"Calendar Events - ActivitieS\"(file:///C:/Users/Eren/IdeaProjects/EU3CucumberSelenium/src/test/resources/features/AccountTypes.feature:6)\r\n",
-  "status": "failed"
-});
-formatter.embedding("image/png", "embedded0.png", "screenshot");
-formatter.after({
-  "status": "passed"
-});
-formatter.uri("file:src/test/resources/features/Contacts.feature");
-formatter.feature({
-  "name": "Contacts page",
+formatter.background({
+  "name": "",
   "description": "",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "name": "Default page number",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
@@ -81,9 +27,28 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Login as a driver",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@driver"
+    },
+    {
+      "name": "@VYT-123"
+    },
+    {
+      "name": "@eren"
+    }
+  ]
+});
 formatter.step({
   "name": "the user enters the driver information",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.match({
   "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_driver_information()"
@@ -92,25 +57,17 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user navigates to \"Customers\" \"Contacts\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.vytrack.step_definitions.navigationMenuStepDefs.the_user_navigates_to(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "default page number should be 1",
+  "name": "the user should be able to login",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.navigationMenuStepDefs.default_page_number_should_be(java.lang.Integer)"
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.junit.ComparisonFailure: expected:\u003cDashboar[]\u003e but was:\u003cDashboar[d]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login(LoginStepDefs.java:35)\r\n\tat ✽.the user should be able to login(file:///C:/Users/Eren/IdeaProjects/EU3CucumberSelenium/src/test/resources/features/login.feature:9)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

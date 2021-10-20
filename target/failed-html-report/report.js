@@ -38,17 +38,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the title contains \"Calendar Events - ActivitieS\"",
+  "name": "the title contains \"Calendar Events - Activities\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "com.vytrack.step_definitions.LoginStepDefs.the_title_contains(java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.vytrack.step_definitions.LoginStepDefs.the_title_contains(LoginStepDefs.java:63)\r\n\tat ✽.the title contains \"Calendar Events - ActivitieS\"(file:///C:/Users/Eren/IdeaProjects/EU3CucumberSelenium/src/test/resources/features/AccountTypes.feature:6)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });
